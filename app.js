@@ -1,6 +1,7 @@
 const diceBtn = document.querySelector(".dice");
 const text = document.querySelector('.advice');
 const authorTxt = document.querySelector('.author');
+const quoteNumber = document.querySelector('#number');
 
 diceBtn.addEventListener('click', getQuote);
 
@@ -42,6 +43,7 @@ const quotes = [
 function getQuote() {
     lights();
     let random = quotes[Math.floor(Math.random() * quotes.length)];
+    quoteNumber.textContent = quotes.indexOf(random) +1 ;   
     text.textContent = random.quote;
     authorTxt.textContent = random.source;
     

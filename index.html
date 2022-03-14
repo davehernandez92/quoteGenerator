@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">  
   <title>Frontend Mentor | Advice generator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,13 +19,22 @@
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
+  <div class="container">
+    <div class="content">
+      <h3 class="adviceCounter"> Advice # <span id="number"></span></h3>
+      <h2 class="advice">Click on dice to generate a random quote!</h2>
+      <h4 class="author"></h4>
+      <span class="divider"></span>
+    </div>
+    <button class="dice"> <img src="/images/icon-dice.svg" alt="dice-button"></button>
+    
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Dave Hernandez</a>.
   </div>
+
+  <script src="/app.js"></script>
 </body>
 </html>
