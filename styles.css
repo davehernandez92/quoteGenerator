@@ -48,7 +48,7 @@ h3 {
     position: relative;
 }
 .divider {
-    background-image: url(/images/pattern-divider-mobile.svg);
+    background-image: url(./images/pattern-divider-mobile.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -87,7 +87,7 @@ h3 {
     }
 
     .divider {
-        background-image: url(/images/pattern-divider-desktop.svg);
+        background-image: url(./images/pattern-divider-desktop.svg);
         margin-top: 15px;
     }
 }
